@@ -1,0 +1,6 @@
+{
+  "Name": "스타벅스상품권",
+  "ProjectType": "Process",
+  "Description": "Blank Process",
+  "MainFile": "Main.xaml"
+}

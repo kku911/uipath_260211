@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="ejQdD2pRwkuFxixWK7PzCA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:p="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://gift.kakao.com/product/7892035?tab=review&amp;sortProperty=SCORE" DesignTimeRectangle="8, -10269, 870, 11100" DesignTimeScaleFactor="1" ElementType="List" FullSelectorArgument="&lt;webctrl class='list_review' parentid='tabPanel_review' tag='UL' /&gt;" Guid="c62473bd-893c-4da0-aec2-2ed4e9ee9dc7" ScopeSelectorArgument="&lt;html app='chrome.exe' title='상품 : 선물하기' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="1e1df5858ccf86a63f13c162523b0d03.png" xmlns="">05WEZXycaMES6rXoR5AmbOQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">ExtractData</x:String>
+    <p:InArgument x:TypeArguments="x:String" x:Key="ExtractDataSettings" xml:space="preserve">&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;
+	&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='일자'&gt;
+		&lt;IsValidName&gt;true&lt;/IsValidName&gt;
+		&lt;ValidationErrorMessage /&gt;
+		&lt;IsExtra&gt;false&lt;/IsExtra&gt;
+		&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;
+		&lt;Format xsi:type='TextColumnFormat' /&gt;
+	&lt;/Column&gt;
+	&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='정보'&gt;
+		&lt;IsValidName&gt;true&lt;/IsValidName&gt;
+		&lt;ValidationErrorMessage /&gt;
+		&lt;IsExtra&gt;false&lt;/IsExtra&gt;
+		&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;
+		&lt;Format xsi:type='TextColumnFormat' /&gt;
+	&lt;/Column&gt;
+	&lt;Column xsi:type='DataNextLink' /&gt;
+&lt;/Table&gt;</p:InArgument>
+    <TargetAnchorable x:Key="NextLinkTarget" BrowserURL="gift.kakao.com/product/7892035" CVScreenId="c262583f-4e51-49fe-b826-3a01a313bd1b" CvElementArea="406, 849, 23, 23" CvType="ArrowButton" DesignTimeRectangle="412, 858, 12, 8" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;app-root&amp;gt;app-view-wrapper&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;article&amp;gt;app-pw-product-detail&amp;gt;div&amp;gt;div&amp;gt;app-product-detail-tab&amp;gt;div&amp;gt;app-info-review&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;button&amp;gt;span' isleaf='1' parentid='tabPanel_review' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' isleaf='1' parentid='tabPanel_review' tag='SPAN' class='ico_detail ico_arr' aaname='' matching:isleaf='fuzzy' fuzzylevel:isleaf='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="e8dc72d1-a8ac-4f86-ac2c-d88f2c8dfb27" ScopeSelectorArgument="&lt;html app='chrome.exe' title='상품 : 선물하기' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="c262583f-4e51-49fe-b826-3a01a313bd1b" CvTextArea="431, 852, 44, 17" CvTextArgument="9Y7|" CvType="Text" DesignTimeRectangle="8, 831, 870, 59" ElementType="Button" FullSelectorArgument="&lt;webctrl class='btn_more' parentid='tabPanel_review' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl class='btn_more' parentid='tabPanel_review' tag='BUTTON' type='button' aaname='더보기 ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='더보기' /&gt;" Guid="c9e9fe1d-5baa-46c4-80c6-df4c13098022" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <TargetAnchorable.PointOffset>
+        <PointOffset />
+      </TargetAnchorable.PointOffset>
+    </TargetAnchorable>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

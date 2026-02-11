@@ -1,0 +1,13 @@
+﻿{
+  "Name": "계산기 봇2",
+  "Type": "Screen",
+  "Id": "bkxFHrGXwkO1O9ZU06rHqw",
+  "Reference": "okHQgVumFkGbs4xVq0_JcQ/bkxFHrGXwkO1O9ZU06rHqw",
+  "ParentRef": "okHQgVumFkGbs4xVq0_JcQ/Umc-6cX_d0y3MfS7J6ywaQ",
+  "Created": "2026-01-28T13:48:31.1179687Z",
+  "Updated": "2026-01-28T13:48:31.1179687Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

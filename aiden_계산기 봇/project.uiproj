@@ -1,0 +1,6 @@
+{
+  "Name": "aiden_계산기 봇",
+  "ProjectType": "Process",
+  "Description": "aiden_계산기 봇",
+  "MainFile": "Main.xaml"
+}

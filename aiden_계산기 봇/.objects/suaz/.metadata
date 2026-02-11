@@ -1,0 +1,12 @@
+﻿{
+  "Name": "계산기 봇2",
+  "Type": "App",
+  "Id": "suazUHf9c0ifK8gmmZYOcg",
+  "Reference": "okHQgVumFkGbs4xVq0_JcQ/suazUHf9c0ifK8gmmZYOcg",
+  "Created": "2026-01-28T13:48:31.0682413Z",
+  "Updated": "2026-01-28T13:48:31.0682413Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

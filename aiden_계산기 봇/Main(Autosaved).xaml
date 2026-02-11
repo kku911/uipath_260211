@@ -1,0 +1,418 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.ComponentModel</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.MetadataLoadContext</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>GlobalVariablesT1PNoYwrqg</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1147,671" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Flowchart sap:VirtualizedContainerService.HintSize="600,648" sap2010:WorkflowViewState.IdRef="Flowchart_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          <av:Point x:Key="ShapeLocation">275,35</av:Point>
+          <av:Size x:Key="ShapeSize">50,50</av:Size>
+          <av:PointCollection x:Key="ConnectorLocation">300,85 300,135</av:PointCollection>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Flowchart.StartNode>
+        <x:Reference>__ReferenceID0</x:Reference>
+      </Flowchart.StartNode>
+      <FlowStep sap2010:WorkflowViewState.IdRef="FlowStep_2">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <av:Point x:Key="ShapeLocation">45,135</av:Point>
+            <av:Size x:Key="ShapeSize">110,70</av:Size>
+            <av:Point x:Key="AnnotationLocation">120,70</av:Point>
+            <av:Size x:Key="AnnotationSize">140,30</av:Size>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <uix:NApplicationCard sap2010:Annotation.AnnotationText="//주석 == shift + F2" AttachMode="ByInstance" CloseMode="Never" DisplayName="계산기 봇1" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="b36fcff4-afe8-43ee-b902-f0489d34160e" Version="V2">
+          <uix:NApplicationCard.Body>
+            <ActivityAction x:TypeArguments="x:Object">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+              </ActivityAction.Argument>
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,1190" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''C''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,227" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b36fcff4-afe8-43ee-b902-f0489d34160e" Version="V5">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable CVScreenId="76523e73-b5aa-4cf5-b133-8acc2edeb6e2" CvElementArea="169, 212, 77, 53" CvTextArea="202, 233, 10, 13" CvTextArgument="C" CvType="Button" DesignTimeRectangle="169, 213, 77, 51" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;uia cls='LandmarkTarget' /&gt;&lt;uia automationid='DisplayControls' cls='NamedContainerAutomationPeer' name='디스플레이 제어' /&gt;&lt;uia automationid='clearButton' cls='Button' name='지우기' /&gt;" FuzzySelectorArgument="&lt;uia cls='LandmarkTarget' /&gt;&lt;uia automationid='DisplayControls' cls='NamedContainerAutomationPeer' name='디스플레이 제어' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;uia automationid='clearButton' cls='Button' name='지우기' role='단추' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' matching:name='fuzzy' fuzzylevel:name='0.0' check:fulltext='C' /&gt;" Guid="41c7c38a-c9d5-4211-8ec5-3a7eca8a798a" InformativeScreenshot="1faa73b9fc94daa407fe7b0d329035df.png" ScopeSelectorArgument="&lt;wnd app='applicationframehost.exe' appid='Microsoft.WindowsCalculator_8wekyb3d8bbwe!App' title='계산기' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive">
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                  <uix:NClick.VerifyOptions>
+                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                      <uix:VerifyExecutionOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionOptions.Retry>
+                      <uix:VerifyExecutionOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionOptions.Timeout>
+                    </uix:VerifyExecutionOptions>
+                  </uix:NClick.VerifyOptions>
+                </uix:NClick>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''첫번째숫자''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,227" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b36fcff4-afe8-43ee-b902-f0489d34160e" Version="V5">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable CVScreenId="76523e73-b5aa-4cf5-b133-8acc2edeb6e2" CvElementArea="12, 318, 76, 53" CvTextArea="44, 338, 12, 16" CvTextArgument="7" CvType="Button" DesignTimeRectangle="12, 319, 77, 51" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;uia cls='LandmarkTarget' /&gt;&lt;uia automationid='NumberPad' cls='NamedContainerAutomationPeer' name='숫자 패드' /&gt;&lt;uia automationid='num7Button' cls='Button' name='7' /&gt;" FuzzySelectorArgument="&lt;uia cls='LandmarkTarget' /&gt;&lt;uia automationid='NumberPad' cls='NamedContainerAutomationPeer' name='숫자 패드' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;uia automationid='num7Button' cls='Button' name='7' role='단추' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' matching:name='fuzzy' fuzzylevel:name='0.0' check:fulltext='7' /&gt;" Guid="22cbbc1e-4a23-419b-ac63-d706a1e4260f" InformativeScreenshot="17bc751ddb5b3e8a1a784a5d0581420a.png" ScopeSelectorArgument="&lt;wnd app='applicationframehost.exe' appid='Microsoft.WindowsCalculator_8wekyb3d8bbwe!App' title='계산기' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive">
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                  <uix:NClick.VerifyOptions>
+                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                      <uix:VerifyExecutionOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionOptions.Retry>
+                      <uix:VerifyExecutionOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionOptions.Timeout>
+                    </uix:VerifyExecutionOptions>
+                  </uix:NClick.VerifyOptions>
+                </uix:NClick>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''*''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,227" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b36fcff4-afe8-43ee-b902-f0489d34160e" Version="V5">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable CVScreenId="76523e73-b5aa-4cf5-b133-8acc2edeb6e2" CvElementArea="248, 318, 76, 53" CvTextArea="278, 337, 14, 13" CvTextArgument="X" CvType="Button" DesignTimeRectangle="248, 319, 76, 51" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;uia cls='LandmarkTarget' /&gt;&lt;uia automationid='StandardOperators' cls='NamedContainerAutomationPeer' name='표준 연산자' /&gt;&lt;uia automationid='multiplyButton' cls='Button' name='곱' /&gt;" FuzzySelectorArgument="&lt;uia cls='LandmarkTarget' /&gt;&lt;uia automationid='StandardOperators' cls='NamedContainerAutomationPeer' name='표준 연산자' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;uia automationid='multiplyButton' cls='Button' name='곱' role='단추' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' matching:name='fuzzy' fuzzylevel:name='0.0' check:fulltext='' /&gt;" Guid="3790bb1f-1532-414e-a84f-9ae71837d5dc" InformativeScreenshot="46f205cd84367a83dd97c41090f9170a.png" ScopeSelectorArgument="&lt;wnd app='applicationframehost.exe' appid='Microsoft.WindowsCalculator_8wekyb3d8bbwe!App' title='계산기' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive">
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                  <uix:NClick.VerifyOptions>
+                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                      <uix:VerifyExecutionOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionOptions.Retry>
+                      <uix:VerifyExecutionOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionOptions.Timeout>
+                    </uix:VerifyExecutionOptions>
+                  </uix:NClick.VerifyOptions>
+                </uix:NClick>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''두번째숫자''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,227" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b36fcff4-afe8-43ee-b902-f0489d34160e" Version="V5">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable CVScreenId="76523e73-b5aa-4cf5-b133-8acc2edeb6e2" CvElementArea="90, 371, 78, 53" CvTextArea="124, 391, 11, 16" CvTextArgument="5" CvType="Button" DesignTimeRectangle="91, 372, 77, 51" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;uia cls='LandmarkTarget' /&gt;&lt;uia automationid='NumberPad' cls='NamedContainerAutomationPeer' name='숫자 패드' /&gt;&lt;uia automationid='num5Button' cls='Button' name='5' /&gt;" FuzzySelectorArgument="&lt;uia cls='LandmarkTarget' /&gt;&lt;uia automationid='NumberPad' cls='NamedContainerAutomationPeer' name='숫자 패드' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;uia automationid='num5Button' cls='Button' name='5' role='단추' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' matching:name='fuzzy' fuzzylevel:name='0.0' check:fulltext='5' /&gt;" Guid="de645eec-7cf9-4072-b4ff-6f7df708d8cb" InformativeScreenshot="18f054599bffcb2d1ef2f5e3d0629421.png" ScopeSelectorArgument="&lt;wnd app='applicationframehost.exe' appid='Microsoft.WindowsCalculator_8wekyb3d8bbwe!App' title='계산기' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive">
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                  <uix:NClick.VerifyOptions>
+                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                      <uix:VerifyExecutionOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionOptions.Retry>
+                      <uix:VerifyExecutionOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionOptions.Timeout>
+                    </uix:VerifyExecutionOptions>
+                  </uix:NClick.VerifyOptions>
+                </uix:NClick>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''=''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,220" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b36fcff4-afe8-43ee-b902-f0489d34160e" Version="V5">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable CVScreenId="76523e73-b5aa-4cf5-b133-8acc2edeb6e2" CvElementArea="246, 476, 79, 54" CvTextArea="276, 492, 19, 22" CvTextArgument="=" CvType="Button" DesignTimeRectangle="248, 478, 76, 51" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;uia cls='LandmarkTarget' /&gt;&lt;uia automationid='StandardOperators' cls='NamedContainerAutomationPeer' name='표준 연산자' /&gt;&lt;uia automationid='equalButton' cls='Button' name='일치' /&gt;" FuzzySelectorArgument="&lt;uia cls='LandmarkTarget' /&gt;&lt;uia automationid='StandardOperators' cls='NamedContainerAutomationPeer' name='표준 연산자' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;uia automationid='equalButton' cls='Button' name='일치' role='단추' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' matching:name='fuzzy' fuzzylevel:name='0.0' check:fulltext='' /&gt;" Guid="53f032fe-2541-4cda-abc8-34dd20f2a54b" InformativeScreenshot="f4e5ccae3e8ea83b862c10aa659a5569.png" ScopeSelectorArgument="&lt;wnd app='applicationframehost.exe' appid='Microsoft.WindowsCalculator_8wekyb3d8bbwe!App' title='계산기' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive">
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                  <uix:NClick.VerifyOptions>
+                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                      <uix:VerifyExecutionOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionOptions.Retry>
+                      <uix:VerifyExecutionOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionOptions.Timeout>
+                    </uix:VerifyExecutionOptions>
+                  </uix:NClick.VerifyOptions>
+                </uix:NClick>
+              </Sequence>
+            </ActivityAction>
+          </uix:NApplicationCard.Body>
+          <uix:NApplicationCard.TargetApp>
+            <uix:TargetApp Area="143, 167, 336, 541" FilePath="Microsoft.WindowsCalculator_8wekyb3d8bbwe!App" IconBase64="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" InformativeScreenshot="aaa600e933df6e8832155cc7741c9701.png" Selector="&lt;wnd app='applicationframehost.exe' appid='Microsoft.WindowsCalculator_8wekyb3d8bbwe!App' title='계산기' /&gt;" Version="V2" />
+          </uix:NApplicationCard.TargetApp>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </uix:NApplicationCard>
+      </FlowStep>
+      <FlowStep x:Name="__ReferenceID0" sap2010:WorkflowViewState.IdRef="FlowStep_1">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <av:Point x:Key="ShapeLocation">245,135</av:Point>
+            <av:Size x:Key="ShapeSize">110,70</av:Size>
+            <av:Point x:Key="AnnotationLocation">320,70</av:Point>
+            <av:Size x:Key="AnnotationSize">240,50</av:Size>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <uix:NApplicationCard sap2010:Annotation.AnnotationText="//계산기 봇 심화&#xA;//숫자를 inputbox 로 받기&#xA;//결과값은 message box 로 출력" AttachMode="ByInstance" CloseMode="Never" DisplayName="계산기 봇2" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="b36fcff4-afe8-43ee-b902-f0489d34160e" Version="V2">
+          <uix:NApplicationCard.Body>
+            <ActivityAction x:TypeArguments="x:Object">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+              </ActivityAction.Argument>
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,2220" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                <Sequence.Variables>
+                  <Variable x:TypeArguments="x:Int32" Default="0" Name="intNum1" />
+                  <Variable x:TypeArguments="x:Int32" Default="0" Name="intNum2" />
+                  <Variable x:TypeArguments="x:String" Name="strResult" />
+                </Sequence.Variables>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''C''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,227" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b36fcff4-afe8-43ee-b902-f0489d34160e" Version="V5">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable CVScreenId="76523e73-b5aa-4cf5-b133-8acc2edeb6e2" CvElementArea="169, 212, 77, 53" CvTextArea="202, 233, 10, 13" CvTextArgument="C" CvType="Button" DesignTimeRectangle="169, 213, 77, 51" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;uia cls='LandmarkTarget' /&gt;&lt;uia automationid='DisplayControls' cls='NamedContainerAutomationPeer' name='디스플레이 제어' /&gt;&lt;uia automationid='clearButton' cls='Button' name='지우기' /&gt;" FuzzySelectorArgument="&lt;uia cls='LandmarkTarget' /&gt;&lt;uia automationid='DisplayControls' cls='NamedContainerAutomationPeer' name='디스플레이 제어' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;uia automationid='clearButton' cls='Button' name='지우기' role='단추' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' matching:name='fuzzy' fuzzylevel:name='0.0' check:fulltext='C' /&gt;" Guid="41c7c38a-c9d5-4211-8ec5-3a7eca8a798a" InformativeScreenshot="1faa73b9fc94daa407fe7b0d329035df.png" ScopeSelectorArgument="&lt;wnd app='applicationframehost.exe' appid='Microsoft.WindowsCalculator_8wekyb3d8bbwe!App' title='계산기' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive">
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                  <uix:NClick.VerifyOptions>
+                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                      <uix:VerifyExecutionOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionOptions.Retry>
+                      <uix:VerifyExecutionOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionOptions.Timeout>
+                    </uix:VerifyExecutionOptions>
+                  </uix:NClick.VerifyOptions>
+                </uix:NClick>
+                <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="416,275" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="첫번째 숫자를 입력하세요" Title="숫자입력" TopMost="False">
+                  <ui:InputDialog.Result>
+                    <OutArgument x:TypeArguments="x:Int32">[intNum1]</OutArgument>
+                  </ui:InputDialog.Result>
+                </ui:InputDialog>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''첫번째숫자''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,227" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b36fcff4-afe8-43ee-b902-f0489d34160e" Version="V5">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable CVScreenId="76523e73-b5aa-4cf5-b133-8acc2edeb6e2" CvElementArea="12, 318, 76, 53" CvTextArea="44, 338, 12, 16" CvTextArgument="7" CvType="Button" DesignTimeRectangle="12, 319, 77, 51" DesignTimeScaleFactor="1" FullSelectorArgument="[string.Format(&quot;&lt;uia cls='LandmarkTarget' /&gt;&lt;uia automationid='NumberPad' cls='NamedContainerAutomationPeer' name='숫자 패드' /&gt;&lt;uia automationid='num{0}Button' cls='Button' /&gt;&quot;, intNum1)]" FuzzySelectorArgument="&lt;uia cls='LandmarkTarget' /&gt;&lt;uia automationid='NumberPad' cls='NamedContainerAutomationPeer' name='숫자 패드' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;uia automationid='num7Button' cls='Button' name='7' role='단추' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' matching:name='fuzzy' fuzzylevel:name='0.0' check:fulltext='7' /&gt;" Guid="22cbbc1e-4a23-419b-ac63-d706a1e4260f" InformativeScreenshot="17bc751ddb5b3e8a1a784a5d0581420a.png" ScopeSelectorArgument="&lt;wnd app='applicationframehost.exe' appid='Microsoft.WindowsCalculator_8wekyb3d8bbwe!App' title='계산기' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive">
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                  <uix:NClick.VerifyOptions>
+                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                      <uix:VerifyExecutionOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionOptions.Retry>
+                      <uix:VerifyExecutionOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionOptions.Timeout>
+                    </uix:VerifyExecutionOptions>
+                  </uix:NClick.VerifyOptions>
+                </uix:NClick>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''*''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,227" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b36fcff4-afe8-43ee-b902-f0489d34160e" Version="V5">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable CVScreenId="76523e73-b5aa-4cf5-b133-8acc2edeb6e2" CvElementArea="248, 318, 76, 53" CvTextArea="278, 337, 14, 13" CvTextArgument="X" CvType="Button" DesignTimeRectangle="248, 319, 76, 51" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;uia cls='LandmarkTarget' /&gt;&lt;uia automationid='StandardOperators' cls='NamedContainerAutomationPeer' name='표준 연산자' /&gt;&lt;uia automationid='multiplyButton' cls='Button' name='곱' /&gt;" FuzzySelectorArgument="&lt;uia cls='LandmarkTarget' /&gt;&lt;uia automationid='StandardOperators' cls='NamedContainerAutomationPeer' name='표준 연산자' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;uia automationid='multiplyButton' cls='Button' name='곱' role='단추' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' matching:name='fuzzy' fuzzylevel:name='0.0' check:fulltext='' /&gt;" Guid="3790bb1f-1532-414e-a84f-9ae71837d5dc" InformativeScreenshot="46f205cd84367a83dd97c41090f9170a.png" ScopeSelectorArgument="&lt;wnd app='applicationframehost.exe' appid='Microsoft.WindowsCalculator_8wekyb3d8bbwe!App' title='계산기' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive">
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                  <uix:NClick.VerifyOptions>
+                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                      <uix:VerifyExecutionOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionOptions.Retry>
+                      <uix:VerifyExecutionOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionOptions.Timeout>
+                    </uix:VerifyExecutionOptions>
+                  </uix:NClick.VerifyOptions>
+                </uix:NClick>
+                <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="416,275" sap2010:WorkflowViewState.IdRef="InputDialog_2" IsPassword="False" Label="두번째 숫자를 입력하세요" Title="숫자입력" TopMost="False">
+                  <ui:InputDialog.Result>
+                    <OutArgument x:TypeArguments="x:Int32">[intNum2]</OutArgument>
+                  </ui:InputDialog.Result>
+                </ui:InputDialog>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''두번째숫자''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,227" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b36fcff4-afe8-43ee-b902-f0489d34160e" Version="V5">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable CVScreenId="76523e73-b5aa-4cf5-b133-8acc2edeb6e2" CvElementArea="90, 371, 78, 53" CvTextArea="124, 391, 11, 16" CvTextArgument="5" CvType="Button" DesignTimeRectangle="91, 372, 77, 51" DesignTimeScaleFactor="1" FullSelectorArgument="[string.Format(&quot;&lt;uia cls='LandmarkTarget' /&gt;&lt;uia automationid='NumberPad' cls='NamedContainerAutomationPeer' name='숫자 패드' /&gt;&lt;uia automationid='num{0}Button' cls='Button' /&gt;&quot;, intNum2)]" FuzzySelectorArgument="&lt;uia cls='LandmarkTarget' /&gt;&lt;uia automationid='NumberPad' cls='NamedContainerAutomationPeer' name='숫자 패드' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;uia automationid='num5Button' cls='Button' name='5' role='단추' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' matching:name='fuzzy' fuzzylevel:name='0.0' check:fulltext='5' /&gt;" Guid="de645eec-7cf9-4072-b4ff-6f7df708d8cb" InformativeScreenshot="18f054599bffcb2d1ef2f5e3d0629421.png" ScopeSelectorArgument="&lt;wnd app='applicationframehost.exe' appid='Microsoft.WindowsCalculator_8wekyb3d8bbwe!App' title='계산기' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive">
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                  <uix:NClick.VerifyOptions>
+                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                      <uix:VerifyExecutionOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionOptions.Retry>
+                      <uix:VerifyExecutionOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionOptions.Timeout>
+                    </uix:VerifyExecutionOptions>
+                  </uix:NClick.VerifyOptions>
+                </uix:NClick>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''=''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,227" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b36fcff4-afe8-43ee-b902-f0489d34160e" Version="V5">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable CVScreenId="76523e73-b5aa-4cf5-b133-8acc2edeb6e2" CvElementArea="246, 476, 79, 54" CvTextArea="276, 492, 19, 22" CvTextArgument="=" CvType="Button" DesignTimeRectangle="248, 478, 76, 51" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;uia cls='LandmarkTarget' /&gt;&lt;uia automationid='StandardOperators' cls='NamedContainerAutomationPeer' name='표준 연산자' /&gt;&lt;uia automationid='equalButton' cls='Button' name='일치' /&gt;" FuzzySelectorArgument="&lt;uia cls='LandmarkTarget' /&gt;&lt;uia automationid='StandardOperators' cls='NamedContainerAutomationPeer' name='표준 연산자' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;uia automationid='equalButton' cls='Button' name='일치' role='단추' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' matching:name='fuzzy' fuzzylevel:name='0.0' check:fulltext='' /&gt;" Guid="53f032fe-2541-4cda-abc8-34dd20f2a54b" InformativeScreenshot="f4e5ccae3e8ea83b862c10aa659a5569.png" ScopeSelectorArgument="&lt;wnd app='applicationframehost.exe' appid='Microsoft.WindowsCalculator_8wekyb3d8bbwe!App' title='계산기' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive">
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                  <uix:NClick.VerifyOptions>
+                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                      <uix:VerifyExecutionOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionOptions.Retry>
+                      <uix:VerifyExecutionOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionOptions.Timeout>
+                    </uix:VerifyExecutionOptions>
+                  </uix:NClick.VerifyOptions>
+                </uix:NClick>
+                <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts '72'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,305" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" ScopeIdentifier="b36fcff4-afe8-43ee-b902-f0489d34160e" Shortcuts="[d(hk)][d(ctrl)]a[u(ctrl)][u(hk)][d(hk)][d(ctrl)]c[u(ctrl)][u(hk)]" Version="V5">
+                  <uix:NKeyboardShortcuts.Target>
+                    <uix:TargetAnchorable CVScreenId="aa9be4a5-bcc0-4f7e-8285-736a96117ad0" ContentHash="xKw4CiwtdUWwzIEql8AvSg" DesignTimeRectangle="8, 104, 320, 75" FullSelectorArgument="&lt;uia cls='LandmarkTarget' /&gt;&lt;uia automationid='CalculatorResults' name='표시는 *' role='text' /&gt;" FuzzySelectorArgument="&lt;uia cls='LandmarkTarget' /&gt;&lt;uia automationid='CalculatorResults' name='표시는 72' role='텍스트' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;" Guid="27f5f09c-0086-404d-8430-08ef5a84bbab" InformativeScreenshot="3934b442d900741001f211ab020e224f.png" Reference="okHQgVumFkGbs4xVq0_JcQ/LAbEQb1L2E-if8rAQ1IRgg" ScopeSelectorArgument="&lt;wnd app='applicationframehost.exe' appid='Microsoft.WindowsCalculator_8wekyb3d8bbwe!App' title='계산기' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+                  </uix:NKeyboardShortcuts.Target>
+                  <uix:NKeyboardShortcuts.VerifyOptions>
+                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                      <uix:VerifyExecutionOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionOptions.Retry>
+                      <uix:VerifyExecutionOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionOptions.Timeout>
+                    </uix:VerifyExecutionOptions>
+                  </uix:NKeyboardShortcuts.VerifyOptions>
+                </uix:NKeyboardShortcuts>
+                <ui:GetFromClipboard TimeoutMS="{x:Null}" DisplayName="Get From Clipboard" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="GetFromClipboard_1">
+                  <ui:GetFromClipboard.Result>
+                    <OutArgument x:TypeArguments="x:String">[strResult]</OutArgument>
+                  </ui:GetFromClipboard.Result>
+                </ui:GetFromClipboard>
+                <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="416,111" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[strResult]" />
+              </Sequence>
+            </ActivityAction>
+          </uix:NApplicationCard.Body>
+          <uix:NApplicationCard.TargetApp>
+            <uix:TargetApp Area="143, 167, 336, 541" ContentHash="5Mx8g8V4DEeObc6kCZDqwg" FilePath="Microsoft.WindowsCalculator_8wekyb3d8bbwe!App" IconBase64="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" InformativeScreenshot="aaa600e933df6e8832155cc7741c9701.png" Reference="okHQgVumFkGbs4xVq0_JcQ/bkxFHrGXwkO1O9ZU06rHqw" Selector="&lt;wnd app='applicationframehost.exe' appid='Microsoft.WindowsCalculator_8wekyb3d8bbwe!App' title='계산기' /&gt;" Version="V2" />
+          </uix:NApplicationCard.TargetApp>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </uix:NApplicationCard>
+      </FlowStep>
+    </Flowchart>
+  </Sequence>
+</Activity>

@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Chrome 스타벅스 상품권  검색  선물하기",
+  "Type": "App",
+  "Id": "Mzo-wPwqdkOGgZ2kSzHb5A",
+  "Reference": "VxGk7xhagUCQxv8eh4w-Hw/Mzo-wPwqdkOGgZ2kSzHb5A",
+  "Created": "2026-02-05T11:46:58.3055775Z",
+  "Updated": "2026-02-05T11:46:58.3055775Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
